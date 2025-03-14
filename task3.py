@@ -24,7 +24,7 @@ def test_3():
 
     @logger(path=os.path.join(os.getcwd(), 'logs', 'flat_list.log'))
     def get_flat_list(list_of_lists):
-        return [el for el in flat_generator(list_of_lists)]
+        return list(flat_generator(list_of_lists))
 
     test_data = [
         [
